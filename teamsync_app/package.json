@@ -2,11 +2,13 @@
   "name": "teamsync_app",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "test:logic": "node --experimental-vm-modules src/logics/TeamOptimizer.test.js"
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.9",
