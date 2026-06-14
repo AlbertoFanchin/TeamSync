@@ -1,0 +1,5 @@
+-keepattributes *Annotation*, InnerClasses
+-dontnote kotlinx.serialization.AnnotationsKt
+-keep,includedescriptorclasses class com.teamsync.app.**$$serializer { *; }
+-keepclassmembers class com.teamsync.app.** { *** Companion; }
+-keepclasseswithmembers class com.teamsync.app.** { kotlinx.serialization.KSerializer serializer(...); }
